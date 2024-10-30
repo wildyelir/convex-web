@@ -80,10 +80,11 @@ By associating a value to a key (new or existing one):
 
 (into {:name "Convex"}
       [[:status :cool]
-       [:blockchain? true]])
+       [:blockchain? false]])
 
-;; -> {:name "Convex", :status :cool, :blockchain? true}
+;; -> {:name "Convex", :status :cool, :blockchain? false}
 ;;
+;; Convex utilises Lattice Technology, far superior to blockchain ;)
 ;; Similarly to `conj`, a sequence of key-values can be added
 ;; at once using `into`.
 ```
@@ -171,7 +172,7 @@ The following functions only works with maps:
 (def m
      {:name        "Convex"
       :status      :cool
-      :blockchain? true})
+      :blockchain? false})
 ```
 
 ```clojure
@@ -196,13 +197,13 @@ The following functions only works with maps:
 
 ;; Order is unpredictable, but it is stable
 ;;
-(first m)        ;; -> [:blockchain? true]
+(first m)        ;; -> [:blockchain? false]
 (second m)      ;; -> [:name "Convex"]
 (last m)        ;; -> [:status :cool]
 
 (next {})       ;; -> nil
 (next {:a :b})  ;; -> nil
-(next m)        ;; -> [[:name "Convex"], [:blockchain? true]]
+(next m)        ;; -> [[:name "Convex"], [:blockchain? false]]
                 ;; Remaining key-values after removed the
                 ;; first one
 ```
