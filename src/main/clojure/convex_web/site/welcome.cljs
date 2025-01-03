@@ -311,9 +311,9 @@
        [:div.flex.justify-center.mt-12
         [:a
          {:class "h-[55.75px] w-[220px] inline-flex items-center justify-center bg-white hover:bg-gray-100 focus:bg-gray-300 border-2 border-convex-dark-blue rounded"
-          :href "https://raw.githubusercontent.com/Convex-Dev/design/main/papers/convex-whitepaper.pdf"}
+          :href "https://docs.convex.world/"}
          [:span.text-base.text-convex-dark-blue
-          "Get the Whitepaper"]]]]]
+          "Convex Docs"]]]]]
 
 
      ;; -- Convex is Flexible
@@ -402,9 +402,9 @@
         [:div.flex.justify-center.mt-12
          [:a
           {:class [button-size "inline-flex items-center justify-center bg-white hover:bg-gray-100 focus:bg-gray-300 border-2 border-convex-dark-blue rounded"]
-           :href "/sandbox"}
+           :href "https://docs.convex.world/docs/products/convex-desktop"}
           [:span.text-base.text-convex-dark-blue
-           "Try the Sandbox"]]]]]]
+           "Download Convex Desktop"]]]]]]
 
 
      [:div.w-screen
